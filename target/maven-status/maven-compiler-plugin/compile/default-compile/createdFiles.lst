@@ -1,0 +1,14 @@
+entity\gr\com\Account.class
+factory\gr\com\QrSessionFactory.class
+dao\gr\com\AlertProfileDao.class
+entity\gr\com\AlertProfile.class
+baseadd\gr\com\BaseApplication.class
+businesslayer\gr\com\AbstractBean.class
+dao\gr\com\ContactDao.class
+businesslayer\gr\com\ContactB.class
+entity\gr\com\Contact.class
+dao\gr\com\AddressDao.class
+dao\gr\com\AccountDao.class
+cross\gr\com\CORSFilter.class
+entity\gr\com\Address.class
+businesslayer\gr\com\AccountB.class

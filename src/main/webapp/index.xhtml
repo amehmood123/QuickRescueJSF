@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+	<title>Quick Rescue</title>
+	<link type="text/css" rel="stylesheet" href="styles/login.css" />
+</h:head>
+<h:body>
+	<div id="head">
+		<div id="header">
+			<div >
+				<h:graphicImage class="logoContainer" value="images/logo.PNG"></h:graphicImage>
+			</div>
+			<div class="topHeaderDiv">
+			</div>
+		</div>
+	</div>
+	<div id="dock">
+		<span />
+	</div>
+
+	<h:form class="formcenter" name="loginForm">
+		<div id="userNameDiv" class="textPlacement">
+			<h:inputText a:placeholder="Username/Email" value="#{account.username}" />
+		</div>
+		<div id="passwordDiv" class="textPlacement">
+			<h:inputSecret a:placeholder="Password" value="#{account.password}" />
+		</div>
+		<div id="submitBtn" class="textPlacement">
+			<h:commandButton value="Login" action="#{account.validateUser()}" />
+		</div>
+	</h:form>
+</h:body>
+</html>
+
