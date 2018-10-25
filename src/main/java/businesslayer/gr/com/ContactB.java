@@ -76,7 +76,7 @@ public class ContactB extends AbstractBean {
 	public void newSetup() {
 		contactID = contacts.size();
 		Contact c = new Contact();
-		Address a=new Address();
+		Address a = new Address();
 		c.setAddress(a);
 		contacts.add(c);
 		editcheck = false;

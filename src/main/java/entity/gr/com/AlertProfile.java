@@ -8,62 +8,61 @@ public class AlertProfile implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-		private int id;
-		private int accountId;
-		private String name;
-		private String city;
-		private String country;
-		
-		private Account account;
 
-		public String getName() {
-			return name;
-		}
+	private int id;
+	private int accountId;
+	private String name;
+	private String city;
+	private String country;
 
-		public void setName(String name) {
-			this.name = name;
-		}
+	private Account account;
 
-		public String getCity() {
-			return city;
-		}
+	public String getName() {
+		return name;
+	}
 
-		public void setCity(String city) {
-			this.city = city;
-		}
+	public void setName(String name) {
+		this.name = name;
+	}
 
-		public String getCountry() {
-			return country;
-		}
+	public String getCity() {
+		return city;
+	}
 
-		public void setCountry(String country) {
-			this.country = country;
-		}
+	public void setCity(String city) {
+		this.city = city;
+	}
 
-		public Account getAccount() {
-			return account;
-		}
+	public String getCountry() {
+		return country;
+	}
 
-		public void setAccount(Account account) {
-			this.account = account;
-		}
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
-		public int getId() {
-			return id;
-		}
+	public Account getAccount() {
+		return account;
+	}
 
-		public void setId(int id) {
-			this.id = id;
-		}
+	public void setAccount(Account account) {
+		this.account = account;
+	}
 
-		public int getAccountId() {
-			return accountId;
-		}
+	public int getId() {
+		return id;
+	}
 
-		public void setAccountId(int accountId) {
-			this.accountId = accountId;
-		}
-		
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getAccountId() {
+		return accountId;
+	}
+
+	public void setAccountId(int accountId) {
+		this.accountId = accountId;
+	}
 
 }

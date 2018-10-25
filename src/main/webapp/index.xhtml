@@ -4,16 +4,15 @@
 	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 <h:head>
 	<title>Quick Rescue</title>
-	<link type="text/css" rel="stylesheet" href="styles/login.css" />
+	<link type="text/css" rel="stylesheet" href="styles/style.css" />
 </h:head>
 <h:body>
 	<div id="head">
 		<div id="header">
-			<div >
+			<div>
 				<h:graphicImage class="logoContainer" value="images/logo.PNG"></h:graphicImage>
 			</div>
-			<div class="topHeaderDiv">
-			</div>
+			<div class="topHeaderDiv"></div>
 		</div>
 	</div>
 	<div id="dock">
@@ -22,7 +21,8 @@
 
 	<h:form class="formcenter" name="loginForm">
 		<div id="userNameDiv" class="textPlacement">
-			<h:inputText a:placeholder="Username/Email" value="#{account.username}" />
+			<h:inputText a:placeholder="Username/Email"
+				value="#{account.username}" />
 		</div>
 		<div id="passwordDiv" class="textPlacement">
 			<h:inputSecret a:placeholder="Password" value="#{account.password}" />

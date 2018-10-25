@@ -3,32 +3,32 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="entity.gr.com.Contact" table="CONTACT" >
-        <id name="id" type="int" >
-            <column name="ID" />
-            <generator class="native" />
-        </id>
-        <property name="firstName" type="java.lang.String">
-            <column name="FIRSTNAME" />
-        </property>
-        <property name="lastName" type="java.lang.String">
-            <column name="LASTNAME" />
-        </property>
-        <property name="email" type="java.lang.String">
-            <column name="EMAIL" />
-        </property>
-        <property name="gender" type="java.lang.String">
-            <column name="GENDER" />
-        </property>
-        <property name="phoneNumber" type="java.lang.String">
-            <column name="PHONENUMBER" />
-        </property>
-        <property name="status" type="java.lang.String">
-            <column name="STATUS" />
-        </property>
-        <!-- <many-to-one name="account" class="entity.gr.com.Account" fetch="select"  >
-            <column name="ACCOUNT_ID" />
-        </many-to-one> -->
-        <one-to-one name="address" class="entity.gr.com.Address" cascade="save-update,delete"></one-to-one>
-    </class>
+	<class name="entity.gr.com.Contact" table="CONTACT">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="firstName" type="java.lang.String">
+			<column name="FIRSTNAME" />
+		</property>
+		<property name="lastName" type="java.lang.String">
+			<column name="LASTNAME" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL" />
+		</property>
+		<property name="gender" type="java.lang.String">
+			<column name="GENDER" />
+		</property>
+		<property name="phoneNumber" type="java.lang.String">
+			<column name="PHONENUMBER" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+		<!-- <many-to-one name="account" class="entity.gr.com.Account" fetch="select" 
+			> <column name="ACCOUNT_ID" /> </many-to-one> -->
+		<one-to-one name="address" class="entity.gr.com.Address"
+			cascade="save-update,delete"></one-to-one>
+	</class>
 </hibernate-mapping>

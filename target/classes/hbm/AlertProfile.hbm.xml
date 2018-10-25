@@ -3,22 +3,21 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Sep 19, 2018 3:27:23 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="entity.gr.com.AlertProfile" table="ALERTPROFILE">
-        <id name="id" type="int" >
-            <column name="ID" />
-            <generator class="native" />
-        </id>
-        <property name="name" type="java.lang.String">
-            <column name="NAME" />
-        </property>
-        <property name="city" type="java.lang.String">
-            <column name="CITY" />
-        </property>
-        <property name="country" type="java.lang.String">
-            <column name="COUNTRY" />
-        </property>
-        <!-- <many-to-one name="account" class="com.qr.repository.entity.Account" cascade="save-update" fetch="select">
-            <column name="ACCOUNT_ID" />
-        </many-to-one> -->
-    </class>
+	<class name="entity.gr.com.AlertProfile" table="ALERTPROFILE">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<property name="city" type="java.lang.String">
+			<column name="CITY" />
+		</property>
+		<property name="country" type="java.lang.String">
+			<column name="COUNTRY" />
+		</property>
+		<!-- <many-to-one name="account" class="com.qr.repository.entity.Account" 
+			cascade="save-update" fetch="select"> <column name="ACCOUNT_ID" /> </many-to-one> -->
+	</class>
 </hibernate-mapping>
