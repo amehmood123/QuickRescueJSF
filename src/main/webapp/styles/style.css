@@ -57,7 +57,7 @@ body {
 		url(https://grid.globalrescue.com/member/assets/images/Header_Bg.jpg)
 		no-repeat;
 	background-size: 100% 100%;
-	height: 100px;
+	height: 15%;
 }
 
 #head {
@@ -101,7 +101,7 @@ div.center {
 	border-radius: 2px;
 	border-color: lightgrey;
 	margin: auto;
-	margin-bottom: 100px;
+	margin-bottom: 15%;
 	text-align: center;
 	align-content: center;
 }
@@ -209,6 +209,7 @@ div.upper input[type=text] {
 
 div.upper a {
 	float: right;
+	cursor: pointer;
 }
 
 #map {
